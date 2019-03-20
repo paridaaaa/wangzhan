@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米登录</title>
+    <link rel="stylesheet" href="../css/小米登录.css"/>
+    <script src="../https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+</head>
+<body>
+    <div class="h-panel">
+        <div class="h-logo">
+
+        </div>
+    </div> 
+<div class="main">
+
+</div> 
+<div class="form">
+    <div class="nav">
+        <span class="active">账号登录</span>
+        <span>|</span>
+        <span>扫码登录</span>
+    </div>
+    
+    <div class="form-content">
+        <div class="account">
+            <p><input type="text" placeholder="邮箱/手机号码/小米ID"></p>
+            <p><input type="password" placeholder="密码"></p>
+            <p><input class="btn" type="submit" value="登录"></p>
+        </div>
+    
+        <div class="saomao">
+            <img src="../images/erweima.jpg" alt="">
+        </div>
+    </div>
+    <div class="zhuce">
+        <div class="message">
+        <span><a href="#">手机短信登录/注册</a></span>
+        </div>
+        <div class="reverse">
+            <a href="#">立即注册</a>
+            <span>|</span>
+            <a href="#">忘记密码？</a>
+        </div>
+    </div>
+
+
+    <div class="other">
+    <p class="qita">
+        <span  class="left"></span> 
+        其他方式登录
+        <span  class="right"></span>
+    </p>
+    </div>
+
+
+    <div class="oth-links">
+        <a class="all-qq" href="#"><i class="qq"></i></a>
+        <a class="all-weibo" href="#"><i class="weibo"></i></a>
+        <a class="all-zhifu" href="#"><i class="zhifu"></i></a>
+        <a class="all-weixin" href="#"><i class="weixin"></i></a>
+    </div>
+</div> 
+<script>
+    $(".nav span").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        console.log($(this).index())
+        $(".form-content>div").eq($(this).index()).show().siblings().hide()
+    })
+</script> 
+
+<div class="foot">
+<div class="link-area">
+    <ul class="link-list">
+        <li><a href="jianti">简体</a></li> <li> |</li>
+        <li><a href="fanti">繁体</a></li> <li> |</li>
+        <li><a href="En">English</a></li> <li> |</li>
+        <li><a href="problem">常见问题</a></li> <li> |</li>
+        <li><a href="privacy">隐私政策</a></li>
+    </ul>
+</div>
+<ul class="intro">
+    <li>小米公司版权所有-京ICP备10046444-</li>
+    <span><img src="../https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png"></span>
+    <li>京公网安备11010802020134号</li>
+    <li>-京ICP证110507号</li>
+</ul>
+</div>
+
+</body>
+</html>
